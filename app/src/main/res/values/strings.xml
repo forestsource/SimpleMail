@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SimpleMail</string>
+    <string name="next">次の画面へ</string>
+    <string name="second">SecondActivity</string>
+    <string name="action_setting">Settings</string>
+    <string name="title_activity">SecondActivity</string>
 </resources>
