@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.net.Uri;
 import android.util.Log;
 
 public class MultiActivity extends AppCompatActivity {
@@ -16,7 +17,8 @@ public class MultiActivity extends AppCompatActivity {
         Button btnNext = (Button) this.findViewById(R.id.button1);
         btnNext.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MultiActivity.this , SecondActivity.class);
+                Uri uri = Uri.parse("http://www.bing.co.jp");
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(intent);
             }
         });
